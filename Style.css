@@ -1,0 +1,208 @@
+/* Estilo base para o site */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Cabeçalho e navegação */
+header {
+  background-color: #00c43b9d;
+  padding: 10px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 36px;
+  font-weight: 600;
+  color: #fff;
+}
+
+header p {
+  font-size: 18px;
+  color: #fff;
+  width: 100%;
+}
+
+nav {
+  width: 100%;
+  background-color: #333;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 10px 0;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+nav li a:hover {
+  color: #00c43b;
+}
+
+/* Conteúdo principal */
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+section h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.ideias ul {
+  list-style: none;
+  padding: 0;
+}
+
+.ideias li {
+  margin-bottom: 20px;
+}
+
+.ideias li a {
+  display: block;
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.ideias li a:hover {
+  background-color: #f2f2f2;
+}
+
+.ideias img {
+  margin-bottom: 10px;
+  width: 100%;
+  height: auto;
+}
+
+/* Botões */
+.botoes {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.botoes a {
+  height: 40px; /* Altura dos botões */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin: 0 10px;
+  cursor: pointer;
+  background-color: #00c43b; /* Cor verde */
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.botoes a:hover {
+  background-color: #00a82a; /* Cor verde mais escura ao passar o mouse */
+}
+
+/* Banner */
+.banner {
+  height: 500px; /* Ajuste a altura do banner */
+  background: linear-gradient(rgba(0, 0, 0, 0.281), rgba(0, 0, 0, 0.308)), url('background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.texto .titulo {
+  font-size: 48px; /* Ajuste o tamanho do título */
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.texto p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Formulário de Contato */
+.contato form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contato label {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.contato input, .contato textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contato button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #00c43b;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contato button:hover {
+  background-color: #00a82a;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  color: white;
+}
